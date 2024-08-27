@@ -1,3 +1,12 @@
+> This is only for rush monorepo
+
+Because `rush` currently not support `pnpm9` or you want use this plugin in other pnpm version，you need:
+
+- use `workspace.yaml` instead of `pnpm-workspace.yaml`
+- use `workspace:catalog:` instead of `catalog:`
+
+**PS** catalog implementation might require you to achieve it through a custom hook in pnpmfile.cjs
+
 <p align="center">
 <img src="https://github.com/antfu/vscode-pnpm-catalog-lens/blob/main/res/icon.png?raw=true" height="150">
 </p>

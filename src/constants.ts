@@ -1,2 +1,2 @@
-export const workspaceFileName = 'pnpm-workspace.yaml'
-export const catalogPrefix = 'catalog:'
+export const workspaceFileName = 'workspace.yaml'
+export const catalogPrefix = 'workspace:catalog:'

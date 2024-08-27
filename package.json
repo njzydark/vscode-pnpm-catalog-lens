@@ -1,7 +1,7 @@
 {
-  "publisher": "antfu",
-  "name": "pnpm-catalog-lens",
-  "displayName": "PNPM Catalog Lens",
+  "publisher": "njzy",
+  "name": "pnpm-catalog-lens-rush",
+  "displayName": "PNPM Catalog Lens (rush)",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.7.1",
@@ -34,7 +34,8 @@
     "vscode": "^1.90.0"
   },
   "activationEvents": [
-    "workspaceContains:pnpm-workspace.yaml"
+    "workspaceContains:pnpm-workspace.yaml",
+    "workspaceContains:workspace.yaml"
   ],
   "contributes": {
     "commands": [
