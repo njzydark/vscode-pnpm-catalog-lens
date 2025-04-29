@@ -9,7 +9,6 @@ import traverse from '@babel/traverse'
 import { computed, defineExtension, executeCommand, shallowRef, toValue as track, useActiveTextEditor, useCommand, useDisposable, useDocumentText, useEditorDecorations, watchEffect } from 'reactive-vscode'
 import { ConfigurationTarget, languages, MarkdownString, Position, Range, Uri, window, workspace } from 'vscode'
 import { config } from './config'
-import { catalogPrefix } from './constants'
 import { PnpmWorkspaceManager } from './data'
 import { commands } from './generated/meta'
 import { getCatalogColor, getNodeRange, logger } from './utils'
@@ -80,6 +79,8 @@ const { activate, deactivate } = defineExtension(() => {
     }[] = []
 
     const { ast } = parsed.value
+
+    const catalogPrefix = config.catalogPrefix
 
     traverse(ast, {
       ObjectProperty(path) {

@@ -27,6 +27,7 @@ Show versions inline for <a href="https://pnpm.io/catalogs" target="_blank">PNPM
 | `pnpmCatalogLens.namedCatalogsColors`     | Give each named catalog a unique color                              | `boolean` | `true`                |
 | `pnpmCatalogLens.namedCatalogsColorsSalt` | A random string to adding as the salt for the named catalogs colors | `string`  | `"pnpm-catalog-lens"` |
 | `pnpmCatalogLens.namedCatalogsLabel`      | Show a small label for named catalog in the inlay hint              | `boolean` | `true`                |
+| `pnpmCatalogLens.catalogPrefix`           | The prefix for catalog dependencies in package.json                 | `string`  | `"catalog:"`          |
 
 <!-- configs -->
 

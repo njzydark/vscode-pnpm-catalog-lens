@@ -71,6 +71,11 @@
           "type": "boolean",
           "default": true,
           "description": "Show a small label for named catalog in the inlay hint"
+        },
+        "pnpmCatalogLens.catalogPrefix": {
+          "type": "string",
+          "default": "catalog:",
+          "description": "The prefix for catalog dependencies in package.json"
         }
       }
     }
